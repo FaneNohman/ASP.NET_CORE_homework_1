@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Product";
+}
+
+<h1>Product</h1>
+
+<ul style="border:solid 0.2px">
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <li>@Model[i] <form asp-controller="Home" asp-action="AddToCart"><input type="hidden" name="id" value="@i" /><input type="submit" value="Add" /></form> </li>
+    }
+</ul>
+
+<form asp-controller="Home" asp-action="AddAllToCart">
+    <input type="submit" value="Add all" />
+</form>

@@ -1,0 +1,14 @@
+﻿
+@{
+}
+<ul style="border:solid">
+    @foreach (var day in Model)
+    {
+        @if(day.Value){
+            <li style="background-color:red">@day.Key</li>
+        }else
+        {
+            <li>@day.Key</li>
+        }
+    }
+</ul>

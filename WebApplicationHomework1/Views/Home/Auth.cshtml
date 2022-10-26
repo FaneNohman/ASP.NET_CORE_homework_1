@@ -1,0 +1,11 @@
+﻿@{
+}
+<h3>Log in</h3>
+<div>
+    <p>Theme @ViewData["theme"]</p>
+    <form asp-controller="Home" asp-action="" class="color-theme-@ViewData["theme"]">
+        <input name="login" type="text" placeholder="login" /><br /><br />
+        <input name="password" type="password" placeholder="password" /><br /><br />
+        <input type="submit" name="submit" value="submit" />
+    </form>
+</div>

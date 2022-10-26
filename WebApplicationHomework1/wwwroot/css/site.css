@@ -1,0 +1,27 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.color-theme-dark{
+    background-color:black;
+    color:white;
+}
+.color-theme-light {
+    background-color: lightblue;
+    color: hotpink;
+}
